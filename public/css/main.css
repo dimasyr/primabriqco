@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    background-color: #faffd8;
 }
 
 article,
@@ -4799,8 +4800,8 @@ blockquote {
 
 .btn.light.outline:hover {
     border-color: #f9f9f9;
-    background-color: #f9f9f9;
-    color: #222;
+    background-color: #082032;
+    color: #f9f9f9;
 }
 
 .btn.light.hero {
@@ -5153,7 +5154,7 @@ blockquote {
 .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #eb5757;
+    background-color: #f0a500;
 }
 
 .nav-link {
@@ -5300,7 +5301,7 @@ blockquote {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    min-height: 350px;
+    height: 250px;
     margin-bottom: 45px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;

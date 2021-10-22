@@ -1,0 +1,19 @@
+.dyr-row {
+    display: flex;
+}
+
+.dyr-column {
+    flex: 50%;
+}
+
+.dyr-column-3 {
+    flex: 30%;
+}
+
+.dyr-row > div {
+    margin: 6px;
+}
+
+.dyr-mt-section {
+    margin-top: 65px;
+}

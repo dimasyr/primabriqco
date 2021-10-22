@@ -14,6 +14,9 @@
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href="{{ asset('/css/main.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('/css/image_slider.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('/css/dyr.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('/css/our_team.css') }}" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
         <script type="text/javascript">
             WebFont.load({
@@ -33,7 +36,11 @@
         </script>
         {{-- <link href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e2daefb4744237fd55_Favicon%20-%20Red.png" rel="shortcut icon" type="image/x-icon" /> --}}
         {{-- <link href="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e8651e73f7f8001990a27a4_Webclip%20-%20Red.png" rel="apple-touch-icon" /> --}}
-        
+        <style>
+            .section-1 p, .section-1 h1 {
+                color: #082032;
+            }
+        </style>
     </head>
 
     <body>
@@ -58,64 +65,104 @@
                 </div>
             </div>
         </div>
-
-        <div class="hero-section wf-section">
+        
+        <div class="wf-section section-1">
             <div class="container">
-                <div class="hero-wrapper">
-                    <h1 class="hero-heading">We are<br />Prima Briqco Nusantara.</h1>
-                    <p class="hero-paragraph">We serve the best quality of </p>
-                    <div class="hero-button-wrapper"><a href="/shop" class="btn light outline w-button">Read more</a></div>
+                <div class="dyr-row">
+                    <div class="dyr-column">
+                        <div class="hero-wrapper">
+                            <h1>We are
+                                <br/>
+                                <span style="color: #f0a500">Prima</span> Briqco Nusantara.
+                            </h1>
+                            <p class="hero-paragraph">We present the best coconut derivative products</p>
+                            <div class="hero-button-wrapper" style="background-color: #f0a500">
+                                <a href="/shop" class="btn light outline w-button">Know us more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dyr-column">
+                        <div class="hero-wrapper">
+                            <div id="slideshow">
+                                <div>
+                                    <img src="{{ asset('/images/briket1.jpeg') }}" alt="">
+                                </div>
+                                <div>
+                                    <img src="{{ asset('/images/cocofiber.png') }}" alt="">
+                                </div>
+                                <div>
+                                    <img src="{{ asset('/images/cocopeat.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="support-section wf-section">
             <div class="container">
-                <div class="support-top-wrapper">
-                    <div class="support-top-left">
-                        <div class="support-top-details-text">Ways to support</div>
-                        <h2 class="support-top-heading">Support Acme Outdoors.</h2>
-                    </div>
-                    <div class="support-top-right">
-                        <p>COVID-19 has forced us to close our retail space, but we need support from patrons like yourself
-                            now more than ever. Below, we’ve listed the best ways to help us through this season.</p>
-                    </div>
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h2>Our Products</h2>
                 </div>
                 <div class="support-wrapper">
                     <div class="support-column">
                         <div class="support-square">
-                            <div class="support-square-number">01</div>
-                            <div class="support-square-text">SHOP<br />PRODUCTS</div><img
-                                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57a5836db2a07bab0e3_Circle.svg"
-                                alt="Circle Decoration in Shop Products Block" class="support-square-image" />
+                            <img src="{{ asset('/images/briket1.jpeg') }}" alt="Briquette" />
                         </div>
                         <p>Our full product line is still available online here on our site! Getting outside and hiking is
                             still something you can do. Get your gear now!</p>
                     </div>
                     <div class="support-column">
                         <div class="support-square">
-                            <div class="support-square-number">02</div>
-                            <div class="support-square-text">Donate</div><img
-                                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adc54453434efb9ee_Triangle.svg"
-                                alt="Triangle Decoration in Donate Block" class="support-square-image triangle" />
+                            <img src="{{ asset('/images/cocofiber.png') }}" alt="Briquette" />
                         </div>
-                        <p>Since we&#x27;ve changed the way we operate to online only, and to ensure your safety, not all
-                            our staff is working. Donate to keep them afloat.</p>
+                        <p>Our full product line is still available online here on our site! Getting outside and hiking is
+                            still something you can do. Get your gear now!</p>
                     </div>
                     <div class="support-column">
                         <div class="support-square">
-                            <div class="support-square-number">03</div>
-                            <div class="support-square-text">Buy <br />GIFT CARDS</div><img
-                                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57afea9a31a44d66db0_Rectangle.svg"
-                                alt="Rectangle Decoration in Buy Gift Cards Block" class="support-square-image rectangle" />
+                            <img src="{{ asset('/images/cocopeat.png') }}" alt="Briquette" />
                         </div>
-                        <p>Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with
-                            friends and family. </p>
+                        <p>Our full product line is still available online here on our site! Getting outside and hiking is
+                            still something you can do. Get your gear now!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="safe-section wf-section">
+
+        <div class="support-section wf-section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h2>Coming Soon</h2>
+                </div>
+                <div class="support-wrapper">
+                    <div class="support-column">
+                        <div class="support-square">
+                            <img src="{{ asset('/images/coco1.jpg') }}" alt="Briquette" />
+                        </div>
+                        <p>Our full product line is still available online here on our site! Getting outside and hiking is
+                            still something you can do. Get your gear now!</p>
+                    </div>
+                    {{-- <div class="support-column">
+                        <div class="support-square">
+                            <img src="{{ asset('/images/cocofiber.png') }}" alt="Briquette" />
+                        </div>
+                        <p>Our full product line is still available online here on our site! Getting outside and hiking is
+                            still something you can do. Get your gear now!</p>
+                    </div>
+                    <div class="support-column">
+                        <div class="support-square">
+                            <img src="{{ asset('/images/cocopeat.png') }}" alt="Briquette" />
+                        </div>
+                        <p>Our full product line is still available online here on our site! Getting outside and hiking is
+                            still something you can do. Get your gear now!</p>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+        
+        {{-- <div class="safe-section wf-section">
             <div class="container">
                 <div class="safe-wrapper">
                     <h2 class="safe-heading">How we&#x27;re keeping you safe during COVID-19</h2>
@@ -125,13 +172,14 @@
                             class="btn light hero safe w-button">Read Our Statement</a></div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+
         <div class="products-section wf-section">
             <div class="container">
                 <div class="shop-top-wrapper">
                     <div class="support-top-left">
-                        <div class="support-top-details-text">shop products</div>
-                        <h2 class="support-top-heading">Open 24/7/365.</h2>
+                        {{-- <div class="support-top-details-text">shop products</div> --}}
+                        <h2 class="support-top-heading">Our Gallery</h2>
                     </div>
                     <div class="support-top-right"></div>
                 </div>
@@ -222,9 +270,55 @@
                 <div class="shop-more"><a href="/shop" class="btn dark w-button">View All Products</a></div>
             </div>
         </div>
-        <div class="shop-local-section wf-section">
-            <div class="container shop-local-container">
-                <div class="shop-local-wrapper">
+
+        <div class="wf-section section-1">
+            <div class="container">
+                <div class="wrapper_team">
+                    <div class="dyr-row">
+                        <div class="dyr-column-3">
+                            <div class="hero-wrapper">
+                                <div class="our_team">
+                                    <img src="https://static.pexels.com/photos/60778/pexels-photo-60778.jpeg" alt="team name"/>
+                                    <div class="pro_detail">
+                                        <h3 class="pro_name">Robart Muzaddid</h3>
+                                        <span class="pro_desc">founder</span>
+                                        <span class="pro_contact"><i class="fa fa-phone-square"></i> +7488895623</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dyr-column-3">
+                            <div class="hero-wrapper">
+                                <div class="our_team">
+                                    <img src="https://static.pexels.com/photos/60778/pexels-photo-60778.jpeg" alt="team name"/>
+                                    <div class="pro_detail">
+                                        <h3 class="pro_name">Robart Muzaddid</h3>
+                                        <span class="pro_desc">founder</span>
+                                        <span class="pro_contact"><i class="fa fa-phone-square"></i> +7488895623</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dyr-column-3">
+                            <div class="hero-wrapper">
+                                <div class="our_team">
+                                    <img src="https://static.pexels.com/photos/60778/pexels-photo-60778.jpeg" alt="team name"/>
+                                    <div class="pro_detail">
+                                        <h3 class="pro_name">Robart Muzaddid</h3>
+                                        <span class="pro_desc">founder</span>
+                                        <span class="pro_contact"><i class="fa fa-phone-square"></i> +7488895623</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- <div class="shop-local-section wf-section"> --}}
+            {{-- <div class="container shop-local-container"> --}}
+                {{-- <div class="shop-local-wrapper">
                     <div class="shop-local-left"></div>
                     <div class="shop-local-right">
                         <div class="shop-local-content-wrapper">
@@ -240,9 +334,10 @@
                             <div><strong>Acme Outdoors</strong></div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
+        
         <div class="footer wf-section">
             <div class="container">
                 <div class="footer-wrapper">
@@ -271,6 +366,54 @@
         </script>
         <script src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/js/webflow.56d8ed5b7.js"
             type="text/javascript"></script>
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            // fade out current slide (first), fade in next slide and move first slide to end
+            var nextSlide = function() { 
+                $("#slideshow > div:first")
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo("#slideshow");
+            }
+
+            var nextSlideTimer = setInterval(nextSlide,  3000);
+
+            // fade out current slide (first) and move last slide to top and fade in
+            // $("#nav-left").click(function() {
+            //     clearInterval(nextSlideTimer);
+
+            //     $("#slideshow > div:first")
+            //     .fadeOut(1000);
+            //     $("#slideshow > div:last")
+            //     .fadeIn(1000)
+            //     .prependTo("#slideshow");
+
+            //     nextSlideTimer = setInterval(nextSlide, 9000)
+            //     setTimeout(nextSlideTimer, 9000)
+            // });
+
+            $("#slideshow").click(function() {
+                clearInterval(nextSlideTimer);
+
+                $("#slideshow > div:first")
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo("#slideshow");
+
+                nextSlideTimer = setInterval(nextSlide, 9000)
+                setTimeout(nextSlideTimer, 9000)
+            });
+
+            // $("#slideshow").hover(function() {
+            //     $("#nav-left").fadeToggle("slow", "linear");
+            //     $("#nav-right").fadeToggle("slow", "linear");
+            // });
+        </script>
         <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
     </body>
 </html>
